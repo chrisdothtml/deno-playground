@@ -15,11 +15,11 @@ cp dotenv .env
 ### 3. Run the server
 
 ```sh
-make start
+make server
 ```
 
 ## Run tests
 
 ```sh
-make test
+make tests
 ```
