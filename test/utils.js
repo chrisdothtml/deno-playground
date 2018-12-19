@@ -1,5 +1,8 @@
 import { test, assertEqual } from 'https://deno.land/x/testing/testing.ts'
+import { getQuery } from '../lib/utils.js'
 
-test(function testTest () {
-  assertEqual(true, true)
+test(function util_getQuery () {
+  assertEqual(getQuery('https://hostname?foo=bar&bar=baz'), { foo: 'bar', bar: 'baz' })
+  assertEqual(getQuery('https://hostname?foo&bar=baz'), { foo: true, bar: 'baz' })
+  assertEqual(getQuery('https://hostname?foo=bar%3Fbaz'), { foo: 'bar?baz' })
 })
