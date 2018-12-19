@@ -17,3 +17,9 @@ cp dotenv .env
 ```sh
 make start
 ```
+
+## Run tests
+
+```sh
+make test
+```
