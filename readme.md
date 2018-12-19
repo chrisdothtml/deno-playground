@@ -15,5 +15,5 @@ cp dotenv .env
 ### 3. Run the server
 
 ```sh
-deno lib/index.js --allow-net --allow-env
+make start
 ```
